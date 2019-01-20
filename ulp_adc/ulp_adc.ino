@@ -64,8 +64,8 @@ static void init_ulp_program()
   adc1_config_channel_atten(ADC1_CHANNEL_6, ADC_ATTEN_DB_11);
   adc1_config_width(ADC_WIDTH_BIT_12);
   adc1_ulp_enable();
-  ulp_low_threshold = 1 * (4095 / 3.3) //1 volt;
-  ulp_high_threshold = 2 * (4095 / 3.3)  // 2 volts;
+  ulp_low_threshold = 1 * (4095 / 3.3); //1 volt
+  ulp_high_threshold = 2 * (4095 / 3.3);  // 2 volts
 
   /* Set ULP wake up period to 100ms */
   ulp_set_wakeup_period(0, 100 * 1000);
